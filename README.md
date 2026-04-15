@@ -4,13 +4,13 @@
 ![License](https://img.shields.io/badge/License-MIT-green)
 ![Status](https://img.shields.io/badge/Status-Research-orange)
 
-## 📌 Deskripsi Proyek
+## Deskripsi Proyek
 
 Repositori ini memuat *master script* untuk analisis puncak penelitian Skripsi mengenai hubungan antara kekeringan meteorologis dengan kejadian kebakaran hutan dan lahan.
 
 Skrip ini mengintegrasikan data spasial **Indeks Kekeringan (SPI 1, 3, 6, 12)** dengan data kejadian **Titik Panas (Hotspot NASA FIRMS MODIS)** di wilayah Provinsi Jambi selama kurun waktu 2010-2020. Tujuannya adalah untuk mengetahui pada skala waktu kekeringan keberapa (jangka pendek atau menengah) titik panas paling responsif muncul.
 
-## 📐 Metodologi
+## Metodologi
 
 Alur analisis dilakukan secara berurutan:
 
@@ -25,7 +25,7 @@ Alur analisis dilakukan secara berurutan:
     * Menghitung Koefisien Korelasi Rank Spearman ($\rho$) antara peningkatan kelas SPI dengan jumlah hotspot.
     * Evaluasi signifikansi (p-value) dengan standar: `*` ($p < 0.05$), `**` ($p < 0.01$), `***` ($p < 0.001$).
 
-## 📂 Struktur Direktori Google Drive
+## Struktur Direktori Google Drive
 
 Script dirancang untuk eksekusi di **Google Colab** dan membutuhkan manajemen folder yang rapi di Google Drive:
 
@@ -46,20 +46,20 @@ Script dirancang untuk eksekusi di **Google Colab** dan membutuhkan manajemen fo
     └── Polygon_SPI12_2009-2011/ ...
 ```
 
-## 💻 Prasyarat Instalasi
+## Prasyarat Instalasi
 
 ```bash
 pip install geopandas pandas matplotlib seaborn scipy numpy
 ```
 
-## 🚀 Cara Penggunaan
+## Cara Penggunaan
 
 1.  Pastikan semua folder hasil pemrosesan SPI (SPI-1 s.d. SPI-12) dan folder Hotspot sudah tersedia di *path* yang sesuai.
 2.  Jalankan script utama `analisis_korelasi_spi_hotspot.ipynb`.
 3.  Script akan memproses overlay spasial iteratif untuk setiap bulan selama 10 tahun.
 4.  Hasil berupa tabel rekapitulasi `.csv` dan grafik komparasi korelasi akan otomatis dihasilkan.
 
-## 📊 Hasil Visualisasi
+## Hasil Visualisasi
 
 Visualisasi utama dari script ini adalah **Bar Chart Komparasi Korelasi**, yang menampilkan nilai $\rho$ Spearman untuk setiap indeks SPI, lengkap dengan label signifikansi akademis (*p-value stars*). Bar berwarna merah menandakan korelasi yang signifikan secara statistik.
 
