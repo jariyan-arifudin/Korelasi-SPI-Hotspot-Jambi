@@ -1,0 +1,27 @@
+# Python & Colab Cache
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Data Files (JANGAN UPLOAD DATA SPASIAL/TABULAR BESAR)
+*.tif
+*.tiff
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+*.csv
+
+# Folder Data Spesifik
+NASA-FIRMS Fire (New2)/
+Batas Adm Jambi/
+SPI1-Output/
+SPI3-Output/
+SPI6-Output/
+SPI12-Output/
+
+# Output Images
+*.png
+*.jpg
